@@ -7,8 +7,8 @@ from socketserver import StreamRequestHandler, ThreadingTCPServer
 logging.basicConfig(level=logging.DEBUG)
 SOCKS_VERSION = 5
 class SocksProxy(StreamRequestHandler):
-    username = 'daxianghuyu'
-    password = 'dx.yy.dog'
+    username = ''
+    password = ''
     def handle(self):
         logging.info('Accepting connection from %s:%s' % self.client_address)
         # 协商
